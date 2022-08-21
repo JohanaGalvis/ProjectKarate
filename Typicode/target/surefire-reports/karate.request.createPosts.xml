@@ -1,0 +1,15 @@
+<testsuite failures="0" name="karate/request/createPosts.feature" skipped="0" tests="1" time="2.04768">
+  <testcase classname="karate.request.createPosts" name="create a post" time="2.04768">
+    <system-out>* url url ................................................................. passed
+* def requestBody = read ('classpath:karate/request/requestBodyCreatePost.json') . passed
+* def responsePost = read ('classpath:karate/request/reponsePost.json') ... passed
+Given path 'posts' ........................................................ passed
+And request requestBody ................................................... passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+And match response == responsePost ........................................ passed
+And assert response.title == requestBody.title ............................ passed
+And assert response.body == requestBody.body .............................. passed
+And assert response.userId == requestBody.userId .......................... passed</system-out>
+  </testcase>
+</testsuite>

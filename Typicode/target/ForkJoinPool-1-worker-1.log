@@ -1,0 +1,101 @@
+17:56:29.189 request:
+1 > POST https://jsonplaceholder.typicode.com/posts
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 39
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: jsonplaceholder.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
+{"title":"foo","body":"bar","userId":1}
+
+17:56:30.583 response time in milliseconds: 1391,86
+1 < 201
+1 < Access-Control-Allow-Credentials: true
+1 < Access-Control-Expose-Headers: Location
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 73e6f65d3f70e790-MDE
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Length: 65
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 21 Aug 2022 22:56:30 GMT
+1 < Etag: W/"41-GDNaWfnVU6RZhpLbye0veBaqcHA"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Expires: -1
+1 < Location: http://jsonplaceholder.typicode.com/posts/101
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Pragma: no-cache
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=QehYgsNppqt1HZJ5Kc5u0cTk2pScR40OPRaWfudtlUTOGo9i3TdAGxONIRXEBt68QfatM1OTAK1vJtA8Vs0tcVmO9sYhE3Fl3TME2vSikoLlMW%2FSQE%2FfwyPBGpT5XarLk3DRWAwtSvG2h79ikq%2B%2B"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 999
+1 < X-Ratelimit-Reset: 1661122638
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{
+  "title": "foo",
+  "body": "bar",
+  "userId": 1,
+  "id": 101
+}
+
+17:56:30.698 request:
+1 > GET https://jsonplaceholder.typicode.com/users/1
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: jsonplaceholder.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
+
+17:56:31.197 response time in milliseconds: 498,51
+1 < 200
+1 < Access-Control-Allow-Credentials: true
+1 < Age: 27131
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 73e6f6624e87f893-MDE
+1 < Cache-Control: max-age=43200
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 21 Aug 2022 22:56:31 GMT
+1 < Etag: W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Expires: -1
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Pragma: no-cache
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=axYiR%2FXM%2B3t60YEwJmxkX9nobEY3E%2BsYB704o0d0gvMJ241GTpEfxAwfthHZv6FE1F1X2akS49UazodRhvzJ7GE8EISccUtCNe9g7tQWWCSTjjcrNRV3Hz1bp1tAKmDrpT3kU4QMudmK17V%2FfhDu"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin, Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 999
+1 < X-Ratelimit-Reset: 1659789308
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{
+  "id": 1,
+  "name": "Leanne Graham",
+  "username": "Bret",
+  "email": "Sincere@april.biz",
+  "address": {
+    "street": "Kulas Light",
+    "suite": "Apt. 556",
+    "city": "Gwenborough",
+    "zipcode": "92998-3874",
+    "geo": {
+      "lat": "-37.3159",
+      "lng": "81.1496"
+    }
+  },
+  "phone": "1-770-736-8031 x56442",
+  "website": "hildegard.org",
+  "company": {
+    "name": "Romaguera-Crona",
+    "catchPhrase": "Multi-layered client-server neural-net",
+    "bs": "harness real-time e-markets"
+  }
+}
+

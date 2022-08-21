@@ -1,0 +1,14 @@
+<testsuite failures="0" name="karate/request/getUser.feature" skipped="0" tests="1" time="0.517302">
+  <testcase classname="karate.request.getUser" name="consult an user" time="0.517302">
+    <system-out>* url url ................................................................. passed
+* def responseGet = read ('classpath:karate/request/responseGet.json') .... passed
+Given path 'users','1' .................................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response == responseGet ......................................... passed
+And assert response.name == "Leanne Graham" ............................... passed
+And assert response.username == "Bret" .................................... passed
+And assert response.address.suite == "Apt. 556" ........................... passed
+And assert response.company.name ==  "Romaguera-Crona" .................... passed</system-out>
+  </testcase>
+</testsuite>
