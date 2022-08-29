@@ -23,13 +23,13 @@ In the development of the tests, good practices are applied to have a cleaner co
 📌GitHub
 
 <h2>Running the tests⌛</h2>
+
 💠Clone the repository (JohanaGalvis/ProjectKarate) to local
 
 💠Open repository in intellij
 
 💠To run each of the features: go to the request folder and select the feature to test, right click on the feature and click Run
 
-💠Open repository in intelli
 
 <h2>Reports 📈</h2>
 Steps to view cucumber reports:
