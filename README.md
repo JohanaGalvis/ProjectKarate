@@ -41,7 +41,7 @@ Steps to view cucumber reports:
 * Right click on overview-feature.html
 
 * select open in, select open in Browser, select chrome
-* 
+ 
 ![image](https://user-images.githubusercontent.com/106351516/187291161-9fa06163-43a9-4bf9-a7e7-3bc3ea77e8e8.png)
 
 Steps to view Karate reports:
@@ -53,7 +53,7 @@ Steps to view Karate reports:
 * Right click on the archive.html (eje:karate.request.client.htmal)
 
 * select open in, select open in Browser, select chrome
-* 
+
 ![image](https://user-images.githubusercontent.com/106351516/187293210-eaa4ea91-1b3f-4a84-a398-1a38f5e0fd88.png)
 
 
