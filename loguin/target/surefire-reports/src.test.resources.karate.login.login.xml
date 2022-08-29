@@ -1,0 +1,123 @@
+<testsuite failures="0" name="src/test/resources/karate/login/login.feature" skipped="0" tests="5" time="3.132909">
+  <testcase classname="src.test.resources.karate.login.login" name="check method POST" time="0.916346">
+    <system-out>* url url ................................................................. passed
+* def requestCreate = {"email": "#(email)", "password": "#(password)"} .... passed
+* def responsePost = {"token": 'QpwL5tke4Pnpja7X4'} ....................... passed
+Given path 'login' ........................................................ passed
+And request requestCreate ................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.resources.karate.login.login" name="check method POST" time="0.580047">
+    <system-out>* url url ................................................................. passed
+* def requestCreate = {"email": "#(email)", "password": "#(password)"} .... passed
+* def responsePost = {"token": 'QpwL5tke4Pnpja7X4'} ....................... passed
+Given path 'login' ........................................................ passed
+And request requestCreate ................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* url url ................................................................. passed
+* def requestCreate = {"email": "#(email)", "password": "#(password)"} .... passed
+* def responsePost = {"token": 'user not found'} .......................... passed
+Given path 'login' ........................................................ passed
+And request requestCreate ................................................. passed
+When method post .......................................................... passed
+Then status 400 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.resources.karate.login.login" name="check method POST" time="0.518938">
+    <system-out>* url url ................................................................. passed
+* def requestCreate = {"email": "#(email)", "password": "#(password)"} .... passed
+* def responsePost = {"token": 'QpwL5tke4Pnpja7X4'} ....................... passed
+Given path 'login' ........................................................ passed
+And request requestCreate ................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* url url ................................................................. passed
+* def requestCreate = {"email": "#(email)", "password": "#(password)"} .... passed
+* def responsePost = {"token": 'user not found'} .......................... passed
+Given path 'login' ........................................................ passed
+And request requestCreate ................................................. passed
+When method post .......................................................... passed
+Then status 400 ........................................................... passed
+* url url ................................................................. passed
+* def requestCreate = {"email": "#(email)", "password": "#(password)"} .... passed
+* def responsePost = {"token": 'user not found'} .......................... passed
+Given path 'login' ........................................................ passed
+And request requestCreate ................................................. passed
+And params {"email": "", "password": ""} .................................. passed
+When method post .......................................................... passed
+Then status 400 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.resources.karate.login.login" name="check method POST" time="0.499551">
+    <system-out>* url url ................................................................. passed
+* def requestCreate = {"email": "#(email)", "password": "#(password)"} .... passed
+* def responsePost = {"token": 'QpwL5tke4Pnpja7X4'} ....................... passed
+Given path 'login' ........................................................ passed
+And request requestCreate ................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* url url ................................................................. passed
+* def requestCreate = {"email": "#(email)", "password": "#(password)"} .... passed
+* def responsePost = {"token": 'user not found'} .......................... passed
+Given path 'login' ........................................................ passed
+And request requestCreate ................................................. passed
+When method post .......................................................... passed
+Then status 400 ........................................................... passed
+* url url ................................................................. passed
+* def requestCreate = {"email": "#(email)", "password": "#(password)"} .... passed
+* def responsePost = {"token": 'user not found'} .......................... passed
+Given path 'login' ........................................................ passed
+And request requestCreate ................................................. passed
+And params {"email": "", "password": ""} .................................. passed
+When method post .......................................................... passed
+Then status 400 ........................................................... passed
+* url url ................................................................. passed
+* def requestCreate = {"email": "#(email)", "password": "#(password)"} .... passed
+* def responsePost = {"token": 'user not found'} .......................... passed
+Given path 'login' ........................................................ passed
+And request requestCreate ................................................. passed
+And params {"email": 1234, "password": -+#} ............................... passed
+When method post .......................................................... passed
+Then status 400 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.resources.karate.login.login" name="check method POST" time="0.618027">
+    <system-out>* url url ................................................................. passed
+* def requestCreate = {"email": "#(email)", "password": "#(password)"} .... passed
+* def responsePost = {"token": 'QpwL5tke4Pnpja7X4'} ....................... passed
+Given path 'login' ........................................................ passed
+And request requestCreate ................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* url url ................................................................. passed
+* def requestCreate = {"email": "#(email)", "password": "#(password)"} .... passed
+* def responsePost = {"token": 'user not found'} .......................... passed
+Given path 'login' ........................................................ passed
+And request requestCreate ................................................. passed
+When method post .......................................................... passed
+Then status 400 ........................................................... passed
+* url url ................................................................. passed
+* def requestCreate = {"email": "#(email)", "password": "#(password)"} .... passed
+* def responsePost = {"token": 'user not found'} .......................... passed
+Given path 'login' ........................................................ passed
+And request requestCreate ................................................. passed
+And params {"email": "", "password": ""} .................................. passed
+When method post .......................................................... passed
+Then status 400 ........................................................... passed
+* url url ................................................................. passed
+* def requestCreate = {"email": "#(email)", "password": "#(password)"} .... passed
+* def responsePost = {"token": 'user not found'} .......................... passed
+Given path 'login' ........................................................ passed
+And request requestCreate ................................................. passed
+And params {"email": 1234, "password": -+#} ............................... passed
+When method post .......................................................... passed
+Then status 400 ........................................................... passed
+* url url ................................................................. passed
+* def requestCreate = {"email": "#(email)", "password": "#(password)"} .... passed
+* def responsePost = {"token": 'user not found'} .......................... passed
+Given path 'login' ........................................................ passed
+And request requestCreate ................................................. passed
+And params {"email": 1234dssdj@, "password": @123} ........................ passed
+When method post .......................................................... passed
+Then status 400 ........................................................... passed</system-out>
+  </testcase>
+</testsuite>

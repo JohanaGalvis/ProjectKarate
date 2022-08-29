@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="visualization"></div>
+    <script>
+var groups = new vis.DataSet([{"id":1,"content":"ForkJoinPool-1-worker-1"}]);
+var items = new vis.DataSet([{"id":1,"group":1,"content":"login[1:9]","start":649,"end":1570,"title":"login[1:9] 19:00:00.649-19:00:01.570 check method POST"},{"id":2,"group":1,"content":"login[2:19]","start":1580,"end":2160,"title":"login[2:19] 19:00:01.580-19:00:02.160 check method POST"},{"id":3,"group":1,"content":"login[3.1:40]","start":2171,"end":2689,"title":"login[3.1:40] 19:00:02.171-19:00:02.689 check method POST"},{"id":4,"group":1,"content":"login[3.2:41]","start":2689,"end":3189,"title":"login[3.2:41] 19:00:02.689-19:00:03.189 check method POST"},{"id":5,"group":1,"content":"login[3.3:42]","start":3200,"end":3820,"title":"login[3.3:42] 19:00:03.200-19:00:03.820 check method POST"}]);
+var container = document.getElementById('visualization');
+var timeline = new vis.Timeline(container);
+timeline.setOptions({ groupOrder: 'content' });
+timeline.setGroups(groups);
+timeline.setItems(items);
+</script>
+  </body>
+</html>
